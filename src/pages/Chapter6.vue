@@ -1,11 +1,11 @@
 <template>
-  <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
-    <q-page-sticky position="top" expand class="bg-blue-4 text-white">
+  <q-page class="flex flex-center bg-indigo-10 sky" style="padding-top: 60px">
+    <q-page-sticky position="top" expand class="bg-indigo-7 text-white">
       <q-toolbar>
-        <q-toolbar-title>Church Party</q-toolbar-title>
+        <q-toolbar-title>6: Church Party</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
-    <div class="q-px-md">
+    <div class="q-px-md text-white">
       <Snowf />
       <p>
         Fade in to an exterior shot of the front of a snow-covered church
@@ -307,14 +307,14 @@
       <q-btn
         outline
         rounded
-        color="primary"
+        color="white"
         label="Prev"
         @click="$router.push('/chapter_5')"
       />
       <q-btn
         outline
         rounded
-        color="primary"
+        color="white"
         label="Next"
         @click="$router.push('/chapter_7')"
       />

@@ -1,11 +1,14 @@
 <template>
-  <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
-    <q-page-sticky position="top" expand class="bg-blue-4 text-white">
+  <q-page
+    class="flex flex-center bg-blue-grey-10 sky"
+    style="padding-top: 60px"
+  >
+    <q-page-sticky position="top" expand class="bg-blue-grey-6 text-white">
       <q-toolbar>
-        <q-toolbar-title>That Night</q-toolbar-title>
+        <q-toolbar-title>9: That Night</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
-    <div class="q-px-md">
+    <div class="q-px-md text-white">
       <Snowf />
       <p>
         Cut to an exterior shot of the Bed and Breakfast at night. Erin and
@@ -121,14 +124,14 @@
       <q-btn
         outline
         rounded
-        color="primary"
+        color="white"
         label="Prev"
         @click="$router.push('/chapter_8')"
       />
       <q-btn
         outline
         rounded
-        color="primary"
+        color="white"
         label="Next"
         @click="$router.push('/chapter_10')"
       />

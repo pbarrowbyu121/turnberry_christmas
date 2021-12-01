@@ -1,20 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header reveal class="bg-black">
-      <!-- <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar> -->
       <q-toolbar>
         <q-btn
           flat
@@ -24,7 +10,9 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-        <q-toolbar-title>Christmas in Turnberry</q-toolbar-title>
+        <q-toolbar-title class="text-dancing-script"
+          >Christmas in Turnberry</q-toolbar-title
+        >
       </q-toolbar>
     </q-header>
 
@@ -57,56 +45,60 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    title: "Home",
+    title: "Title Page",
     to: "/",
   },
   {
-    title: "Chapter 1",
+    title: "Ch 1: Decorating and Driving",
     to: "/chapter_1",
   },
   {
-    title: "Chapter 2",
+    title: "Ch 2: Injury to Skate Shack",
     to: "/chapter_2",
   },
   {
-    title: "Chapter 3",
+    title: "Ch 3: At the Garage",
     to: "/chapter_3",
   },
   {
-    title: "Chapter 4",
+    title: "Ch 4: Bed and Breakfast",
     to: "/chapter_4",
   },
   {
-    title: "Chapter 5",
+    title: "Ch 5: Skating Rink",
     to: "/chapter_5",
   },
   {
-    title: "Chapter 6",
+    title: "Ch 6: Church Party",
     to: "/chapter_6",
   },
   {
-    title: "Chapter 7",
+    title: "Ch 7: Tree Hunting",
     to: "/chapter_7",
   },
   {
-    title: "Chapter 8",
+    title: "Ch 8: Snowball Fight",
     to: "/chapter_8",
   },
   {
-    title: "Chapter 9",
+    title: "Ch 9: That Night",
     to: "/chapter_9",
   },
   {
-    title: "Chapter 10",
+    title: "Ch 10: Getting the Hay",
     to: "/chapter_10",
   },
   {
-    title: "Chapter 11",
+    title: "Ch 11: Breakfast",
     to: "/chapter_11",
   },
   {
-    title: "Chapter 12",
+    title: "Ch 12: Christmas Eve",
     to: "/chapter_12",
+  },
+  {
+    title: "Ch 13: Christmas Eve Nativity",
+    to: "/chapter_13",
   },
   // {
   //   title: 'Docs',
