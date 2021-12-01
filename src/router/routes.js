@@ -17,6 +17,7 @@ const routes = [
       { path: "/chapter_10", component: () => import("pages/Chapter10.vue") },
       { path: "/chapter_11", component: () => import("pages/Chapter11.vue") },
       { path: "/chapter_12", component: () => import("pages/Chapter12.vue") },
+      { path: "/chapter_13", component: () => import("pages/Chapter13.vue") },
     ],
   },
 

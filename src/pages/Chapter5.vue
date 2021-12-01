@@ -1,12 +1,22 @@
 <template>
-  <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
-    <q-page-sticky position="top" expand class="bg-blue-4 text-white">
+  <q-page class="flex flex-center bg-indigo-10 sky" style="padding-top: 60px">
+    <q-page-sticky position="top" expand class="bg-indigo-7 text-white">
       <q-toolbar>
-        <q-toolbar-title>Skating Rink</q-toolbar-title>
+        <q-toolbar-title>5: Skating Rink</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
-    <div class="q-px-md">
+    <div class="q-px-md text-white">
       <Snowf />
+      <p>
+        Cut a few hours ahead. An exterior shot of Rachael’s Bed and Breakfast.
+        It’s dark out. Blaze is on the bed flipping through channels on the TV.
+        Catie comes out of the bathroom in a different pair of pants. Catie
+        suggests they go skating at the quaint skating rink. Blaze doesn’t want
+        to. “I dunno, babe. Don’t you think it’s been kind of a long day
+        already? Wouldn’t you rather just cuddle up and watch The Office?” Catie
+        just sighs out of exasperation and walks out the room leaving Blaze
+        alone.
+      </p>
       <p>
         Catie walks across the street to the skating rink. She hears Christmas
         carols playing in the distance softly and the cacophony of people having
@@ -228,14 +238,14 @@
       <q-btn
         outline
         rounded
-        color="primary"
+        color="white"
         label="Prev"
         @click="$router.push('/chapter_4')"
       />
       <q-btn
         outline
         rounded
-        color="primary"
+        color="white"
         label="Next"
         @click="$router.push('/chapter_6')"
       />

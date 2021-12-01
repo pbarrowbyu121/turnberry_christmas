@@ -2,7 +2,7 @@
   <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
     <q-page-sticky position="top" expand class="bg-blue-4 text-white">
       <q-toolbar>
-        <q-toolbar-title>Decorating and Driving</q-toolbar-title>
+        <q-toolbar-title>1: Decorating and Driving</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
     <div class="q-px-md">

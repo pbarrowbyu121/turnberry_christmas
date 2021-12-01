@@ -2,7 +2,7 @@
   <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
     <q-page-sticky position="top" expand class="bg-blue-4 text-white">
       <q-toolbar>
-        <q-toolbar-title>Injury to Skate Shack</q-toolbar-title>
+        <q-toolbar-title>2: Injury to Skate Shack</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
     <div class="q-px-md">

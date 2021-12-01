@@ -2,7 +2,7 @@
   <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
     <q-page-sticky position="top" expand class="bg-blue-4 text-white">
       <q-toolbar>
-        <q-toolbar-title>Bed and Breakfast</q-toolbar-title>
+        <q-toolbar-title>4: Bed and Breakfast</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
     <div class="q-px-md">
@@ -78,17 +78,6 @@
         “Oh yes,” replies Rachael. “That’s Erin and Peter’s skating rink. We’ve
         still got some time before dinner. Why don’t you two have a nice
         romantic lap around the pond before then?”
-      </p>
-      <hr />
-      <p>
-        Cut a few hours ahead. An exterior shot of Rachael’s Bed and Breakfast.
-        It’s dark out. Blaze is on the bed flipping through channels on the TV.
-        Catie comes out of the bathroom in a different pair of pants. Catie
-        suggests they go skating at the quaint skating rink. Blaze doesn’t want
-        to. “I dunno, babe. Don’t you think it’s been kind of a long day
-        already? Wouldn’t you rather just cuddle up and watch The Office?” Catie
-        just sighs out of exasperation and walks out the room leaving Blaze
-        alone.
       </p>
     </div>
     <div class="row justify-between q-mx-lg" style="width: 250px">
