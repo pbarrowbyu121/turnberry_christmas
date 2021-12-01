@@ -1,16 +1,12 @@
 <template>
-  <q-page class="flex flex-center" style="padding-top: 60px">
-    <!-- <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    > -->
-    <q-page-sticky position="top" expand class="bg-accent text-white">
+  <q-page class="flex flex-center bg-blue-2 sky" style="padding-top: 60px">
+    <q-page-sticky position="top" expand class="bg-blue-4 text-white">
       <q-toolbar>
         <q-toolbar-title>Decorating and Driving</q-toolbar-title>
       </q-toolbar>
     </q-page-sticky>
     <div class="q-px-md">
+      <Snowf />
       <p>
         The first shots are of a wintry small town. Main street. Mid morning. It
         seems like the whole town has come outside to decorate for Christmas.
@@ -125,16 +121,32 @@
       </p>
     </div>
     <div class="row justify-between q-mx-lg" style="width: 250px">
-      <q-btn outline rounded color="primary" label="Prev" />
-      <q-btn outline rounded color="primary" label="Next" />
+      <q-btn
+        outline
+        rounded
+        color="primary"
+        label="Prev"
+        @click="$router.push('/')"
+      />
+      <q-btn
+        outline
+        rounded
+        color="primary"
+        label="Next"
+        @click="$router.push('/chapter_2')"
+      />
     </div>
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from "vue";
+import Snowf from "vue-snowf/src/components/Snowf";
 
 export default defineComponent({
   name: "Chapter1",
+  components: {
+    Snowf,
+  },
 });
 </script>
