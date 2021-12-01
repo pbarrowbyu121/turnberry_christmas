@@ -54,7 +54,6 @@
 
 <script>
 import EssentialLink from "components/EssentialLink.vue";
-import snowstorm from "../../public/snowstorm.js";
 
 const linksList = [
   {
@@ -64,6 +63,50 @@ const linksList = [
   {
     title: "Chapter 1",
     to: "/chapter_1",
+  },
+  {
+    title: "Chapter 2",
+    to: "/chapter_2",
+  },
+  {
+    title: "Chapter 3",
+    to: "/chapter_3",
+  },
+  {
+    title: "Chapter 4",
+    to: "/chapter_4",
+  },
+  {
+    title: "Chapter 5",
+    to: "/chapter_5",
+  },
+  {
+    title: "Chapter 6",
+    to: "/chapter_6",
+  },
+  {
+    title: "Chapter 7",
+    to: "/chapter_7",
+  },
+  {
+    title: "Chapter 8",
+    to: "/chapter_8",
+  },
+  {
+    title: "Chapter 9",
+    to: "/chapter_9",
+  },
+  {
+    title: "Chapter 10",
+    to: "/chapter_10",
+  },
+  {
+    title: "Chapter 11",
+    to: "/chapter_11",
+  },
+  {
+    title: "Chapter 12",
+    to: "/chapter_12",
   },
   // {
   //   title: 'Docs',
