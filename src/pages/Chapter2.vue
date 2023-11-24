@@ -107,26 +107,12 @@
         to Esther, Chella, Dallan, and Derek.
       </p>
     </div>
-    <div class="row justify-between q-mx-lg" style="width: 250px">
-      <q-btn
-        outline
-        rounded
-        color="primary"
-        label="Prev"
-        @click="$router.push('/chapter_1')"
-      />
-      <q-btn
-        outline
-        rounded
-        color="primary"
-        label="Next"
-        @click="$router.push('/chapter_3')"
-      />
-    </div>
+    <NavButtons :prev="'/chapter_1'" :next="'/chapter_3'" />
   </q-page>
 </template>
 
 <script>
+import NavButtons from "src/components/NavButtons.vue";
 import { defineComponent } from "vue";
 import Snowf from "vue-snowf/src/components/Snowf";
 
@@ -134,6 +120,7 @@ export default defineComponent({
   name: "Chapter2",
   components: {
     Snowf,
+    NavButtons,
   },
 });
 </script>

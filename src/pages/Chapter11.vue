@@ -72,7 +72,8 @@
         He folds his pancakes with his fork, and stuffs it into his mouth.
       </p>
     </div>
-    <div class="row justify-between q-mx-lg" style="width: 250px">
+    <NavButtons :prev="'/chapter_10'" :next="'/chapter_12'" />
+    <!-- <div class="row justify-between q-mx-lg" style="width: 250px">
       <q-btn
         outline
         rounded
@@ -87,18 +88,20 @@
         label="Next"
         @click="$router.push('/chapter_12')"
       />
-    </div>
+    </div> -->
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import Snowf from "vue-snowf/src/components/Snowf";
+import NavButtons from "src/components/NavButtons.vue";
 
 export default defineComponent({
   name: "Chapter11",
   components: {
     Snowf,
+    NavButtons,
   },
 });
 </script>

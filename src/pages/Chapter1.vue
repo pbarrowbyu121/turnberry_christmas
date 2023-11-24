@@ -68,39 +68,91 @@
         town. Initially the view of Main Street being decorated brings her a
         smile, but then she gets a look of emotional discomfort.
       </p>
-      <p>
-        She makes brief eye contact with a gentleman climbing a ladder to hang
-        Christmas lights from a street post. He’s in his early thirties. His
-        hair is cut modestly, but very well. His chin is covered with a few days
-        worth of unshaved scruff. He’s got a quiet manner about him. He’s
-        wearing a warm coat, maroon sweater, and dark blue jeans. He takes good
-        care of himself, but isn’t concerned about what others think.
-      </p>
-      <p>
-        “I’m so glad we’re only passing through this small town. Why don’t these
-        people just move to the nearest big city?” poses Blaze. Catie doesn’t
-        respond. Her eyes are straining to keep looking at the guy that caught
-        her eyes. Blaze starts to speed up. This gets Catie’s attention. Catie
-        points out that he’s going quite fast.
-      </p>
-      <p>
-        Back on Main Street, we see the same guy that made eye contact with
-        Catie. He’s still watching the black Mercedes Benz that just passed by.
-        Below him is Cassandra, a woman in her late twenties. Cassandra’s
-        holding the ladder steady as Beryl climbs.
-      </p>
-      <p>
-        “Beryl. Beryl!” Cassandra says with a little volume. She’s holding up
-        more lights for him to hang. He returns his attention to the lights he’s
-        hanging. “Sorry about that, Cassandra.” Cassandra hands up the strand of
-        lights. Beryl asks, “Hey, how’s Zach these days? I haven’t talked to him
-        since I’ve been in town.”
-      </p>
-      <p>
-        “Oh you know Zach. Sometimes I’m not sure if he’s married to me, or if
-        he’s married to writing.”
-      </p>
-      <p>
+
+      <!-- For big screens -->
+      <div class="lt-md">
+        <q-img
+          src="../assets/images/Main_Street_Ch1.png"
+          style="max-width: 500px"
+        />
+        <div class="q-mt-sm">
+          <p>
+            She makes brief eye contact with a gentleman climbing a ladder to
+            hang Christmas lights from a street post. He’s in his early
+            thirties. His hair is cut modestly, but very well. His chin is
+            covered with a few days worth of unshaved scruff. He’s got a quiet
+            manner about him. He’s wearing a warm coat, maroon sweater, and dark
+            blue jeans. He takes good care of himself, but isn’t concerned about
+            what others think.
+          </p>
+          <p>
+            “I’m so glad we’re only passing through this small town. Why don’t
+            these people just move to the nearest big city?” poses Blaze. Catie
+            doesn’t respond. Her eyes are straining to keep looking at the guy
+            that caught her eyes. Blaze starts to speed up. This gets Catie’s
+            attention. Catie points out that he’s going quite fast.
+          </p>
+          <p>
+            Back on Main Street, we see the same guy that made eye contact with
+            Catie. He’s still watching the black Mercedes Benz that just passed
+            by. Below him is Cassandra, a woman in her late twenties.
+            Cassandra’s holding the ladder steady as Beryl climbs.
+          </p>
+          <p>
+            “Beryl. Beryl!” Cassandra says with a little volume. She’s holding
+            up more lights for him to hang. He returns his attention to the
+            lights he’s hanging. “Sorry about that, Cassandra.” Cassandra hands
+            up the strand of lights. Beryl asks, “Hey, how’s Zach these days? I
+            haven’t talked to him since I’ve been in town.”
+          </p>
+          <p>
+            “Oh you know Zach. Sometimes I’m not sure if he’s married to me, or
+            if he’s married to writing.”
+          </p>
+        </div>
+      </div>
+      <div class="gt-sm row q-gutter-md">
+        <div class="col-4">
+          <q-img src="../assets/images/Main_Street_Ch1.png" />
+        </div>
+        <div class="col q-mt-sm">
+          <p>
+            She makes brief eye contact with a gentleman climbing a ladder to
+            hang Christmas lights from a street post. He’s in his early
+            thirties. His hair is cut modestly, but very well. His chin is
+            covered with a few days worth of unshaved scruff. He’s got a quiet
+            manner about him. He’s wearing a warm coat, maroon sweater, and dark
+            blue jeans. He takes good care of himself, but isn’t concerned about
+            what others think.
+          </p>
+          <p>
+            “I’m so glad we’re only passing through this small town. Why don’t
+            these people just move to the nearest big city?” poses Blaze. Catie
+            doesn’t respond. Her eyes are straining to keep looking at the guy
+            that caught her eyes. Blaze starts to speed up. This gets Catie’s
+            attention. Catie points out that he’s going quite fast.
+          </p>
+          <p>
+            Back on Main Street, we see the same guy that made eye contact with
+            Catie. He’s still watching the black Mercedes Benz that just passed
+            by. Below him is Cassandra, a woman in her late twenties.
+            Cassandra’s holding the ladder steady as Beryl climbs.
+          </p>
+          <p>
+            “Beryl. Beryl!” Cassandra says with a little volume. She’s holding
+            up more lights for him to hang. He returns his attention to the
+            lights he’s hanging. “Sorry about that, Cassandra.” Cassandra hands
+            up the strand of lights. Beryl asks, “Hey, how’s Zach these days? I
+            haven’t talked to him since I’ve been in town.”
+          </p>
+          <p>
+            “Oh you know Zach. Sometimes I’m not sure if he’s married to me, or
+            if he’s married to writing.”
+          </p>
+        </div>
+      </div>
+
+      <p class="q-mt-md">
         “That sounds about right. So it sounds like he’s doing well, then?”
         chuckles Beryl, still focusing on fitting the lights together correctly.
       </p>
@@ -120,33 +172,20 @@
         holidays.” Beryl smiles at Cassandra while untangling lights.
       </p>
     </div>
-    <div class="row justify-between q-mx-lg" style="width: 250px">
-      <q-btn
-        outline
-        rounded
-        color="primary"
-        label="Prev"
-        @click="$router.push('/')"
-      />
-      <q-btn
-        outline
-        rounded
-        color="primary"
-        label="Next"
-        @click="$router.push('/chapter_2')"
-      />
-    </div>
+    <NavButtons :next="'/chapter_2'" :prev="'/'" />
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from "vue";
+import NavButtons from "src/components/NavButtons.vue";
 import Snowf from "vue-snowf/src/components/Snowf";
 
 export default defineComponent({
   name: "Chapter1",
   components: {
     Snowf,
+    NavButtons,
   },
 });
 </script>

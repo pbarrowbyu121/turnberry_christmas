@@ -1,8 +1,8 @@
 {
   "name": "turnberry_christmas",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "Christmas in Turnberry: based on 2018 friends of the author in Holladay, UT",
+  "productName": "Turnberry Christmas",
   "author": "Peter Barrow <peter.august.barrow@gmail.com>",
   "private": true,
   "scripts": {
