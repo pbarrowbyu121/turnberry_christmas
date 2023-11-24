@@ -235,26 +235,12 @@
       </div> -->
       <FinalScene />
     </div>
-    <div class="row justify-between q-mx-lg" style="width: 250px">
-      <q-btn
-        outline
-        rounded
-        color="white"
-        label="Prev"
-        @click="$router.push('/chapter_12')"
-      />
-      <q-btn
-        outline
-        rounded
-        color="white"
-        label="Home"
-        @click="$router.push('/')"
-      />
-    </div>
+    <NavButtons :prev="'/chapter_12'" :next="'/'" color="white" />
   </q-page>
 </template>
 
 <script>
+import NavButtons from "src/components/NavButtons.vue";
 import { defineComponent } from "vue";
 import Snowf from "vue-snowf/src/components/Snowf";
 import FinalScene from "../components/FinalScene";
@@ -264,6 +250,7 @@ export default defineComponent({
   components: {
     // Snowf,
     FinalScene,
+    NavButtons,
   },
 });
 </script>

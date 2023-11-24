@@ -234,33 +234,20 @@
         front door of Rachael’s.
       </p>
     </div>
-    <div class="row justify-between q-mx-lg" style="width: 250px">
-      <q-btn
-        outline
-        rounded
-        color="white"
-        label="Prev"
-        @click="$router.push('/chapter_4')"
-      />
-      <q-btn
-        outline
-        rounded
-        color="white"
-        label="Next"
-        @click="$router.push('/chapter_6')"
-      />
-    </div>
+    <NavButtons :prev="'/chapter_4'" :next="'/chapter_6'" color="white" />
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import Snowf from "vue-snowf/src/components/Snowf";
+import NavButtons from "src/components/NavButtons.vue";
 
 export default defineComponent({
   name: "Chapter5",
   components: {
     Snowf,
+    NavButtons,
   },
 });
 </script>
